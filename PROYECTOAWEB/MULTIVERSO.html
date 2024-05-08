@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIGITAL_COMIC</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+        position: relative;
+    }
+    .comics-container {
+        display: flex;
+        justify-content: space-between; /* Ajuste para espacio entre las imágenes */
+        margin-bottom: 20px; /* Ajuste para espacio debajo de la fila de imágenes */
+    }
+    .comic {
+        background-color: #747474;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 170px; /* Ancho modificado */
+        height: 260px; /* Alto modificado */
+        overflow: hidden;
+        position: relative;
+    }
+    .comic img {
+        transition: transform 0.3s ease-in-out;
+    }
+    .comic:hover img {
+        transform: scale(1.1); /* Zoom al 110% */
+    }
+    .comic h2 {
+        color: #333;
+    }
+    .comic p {
+        color: #666;
+    }
+    .upload {
+        background-color: #007bff;
+        color: #fff;
+        padding: 5px 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    /* Estilos para la pestaña plegable */
+    .toggle-tab {
+        position: fixed;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-color: #ff008c;
+        color: #fff;
+        padding: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        cursor: pointer;
+        z-index: 999;
+    }
+    .toggle-tab:hover {
+        background-color: #00b30f;
+    }
+    .toggle-content {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100%;
+        background-color:  #333;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease-in-out;
+        z-index: 998;
+        padding: 20px;
+    }
+    .toggle-tab.active + .toggle-content {
+        left: 0;
+    }
+    .toggle-content img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Estilo para el div INICIO */
+    .inicio-section {
+        background-color: #ffffff; 
+        color: #1b1b1b;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        width: 280px;
+        height: -50%;
+    }
+
+    /* Nuevo estilo para los enlaces */
+    .enlace {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>DIGITAL_COMIC</h1>
+</header>
+
+<div class="container">
+    <div class="comics-container">
+        <!-- Grupo de imágenes 1 -->
+        <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\PDF COMICS\WOLVERINE ASUNTOS DEL PASADO BY PHENOMENAL.pdf" target="_blank" class="comic">
+            <img src="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\IMAGENES\WOLVERINE ASUNTOS DEL PASADO.png" alt="Comic 1" style="width: 170px; height: 260px;">
+        </a>
+        <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\PDF COMICS\GUARDIANES DE LA GALAXIA LA GEMA DE LA MENTE BY PHENOMENAL.pdf" target="_blank" class="comic">
+            <img src="d:\PHENOMENAL\COMIC\COMIC GUARDIANES DE LA GALAXIA\GUARDIANES DE LA GALAXIA LA GEMA DE LA MENTE BY PHENOMENAL.png" alt="Comic 2" style="width: 170px; height: 260px;">
+        </a>
+        <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\PDF COMICS\VENGADORES UNIDOS BY PHENOMENAL.pdf" target="_blank" class="comic">
+            <img src="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\IMAGENES\VENGADORES UNIDOS.png" alt="Comic 3" style="width: 170px; height: 260px;">
+        </a>
+        <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\PDF COMICS\ULTIMATE SPIDERMAN BY PHENOMENAL.pdf" target="_blank" class="comic">
+            <img src="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\IMAGENES\SPIDERMAN1.png" alt="Comic 4" style="width: 170px; height: 260px;">
+        </a>
+    </div>
+</div>
+<BR>
+    <div class="container">
+        <div class="comics-container">
+            <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\PDF COMICS\BATPOOL LA RISA DEL MAL BY PHENOMENAL.pdf" target="_blank" class="comic">
+                <img src="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\IMAGENES\BATMAN X DEADPOOL.png" alt="Comic 5" style="width: 170px; height: 260px;">
+            </a>
+            <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\PDF COMICS\BLUE BEETLE EL ESCARABAJO REY BY PHENOMENAL.pdf" target="_blank" class="comic">
+                <img src="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\IMAGENES\BLUE BEETLE EL ESCARABAJO REY.png" alt="Comic 6" style="width: 170px; height: 260px;">
+            </a>
+            <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\PDF COMICS\LA JOVEN LIGA DE LA JUSTICIA BY PHENOMENAL.pdf" target="_blank" class="comic">
+                <img src="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\IMAGENES\JOVEN LIGA.png" alt="Comic 7" style="width: 170px; height: 260px;">
+            </a>
+            <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\PDF COMICS\LA JOVEN LIGA DE LA JUSTICI DE HEROES A SUPERHEROES A BY PHENOMENAL.pdf" target="_blank" class="comic">
+                <img src="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\IMAGENES\JOVEN LIGA DE HERUES A SUPERHERUES.png" alt="Comic 8" style="width: 170px; height: 260px;">
+            </a>
+        </div>
+    </div>
+    <BR>
+        <div class="container">
+            <div class="comics-container">
+                <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\PDF COMICS\DRAGON BALL SUPER SAIYAN ROSE BY PHENOMENAL Y TROMPETA (2).pdf" target="_blank" class="comic">
+                    <img src="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\IMAGENES\SUPER SAIYAN ROSE.png" alt="Comic 9" style="width: 170px; height: 260px;">
+                </a>
+                <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\PDF COMICS\LA TRANSFORMACION DEFINITIVA BY PHENOMENAL Y TROMPETA.pdf" target="_blank" class="comic">
+                    <img src="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\IMAGENES\LA TRANSFORMACION DEFINITIVA.png" alt="Comic 10" style="width: 170px; height: 260px;">
+                </a>
+                <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\PDF COMICS\LINTERNA VERDE EL NOVATO ESMERALDA BY PHENOMENAL.pdf" target="_blank" class="comic">
+                    <img src="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\IMAGENES\LINTERNA VERDE EL NOVATO ESMERALDA BY PHENOMENAL.png" alt="Comic 11" style="width: 170px; height: 260px;">
+                </a>
+                <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\PDF COMICS\EL CENTINELA MAXIMO BY PHENOMENAL.pdf" target="_blank" class="comic">
+                    <img src="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\IMAGENES\CENTINELA MAXIMO.png" alt="Comic 12" style="width: 170px; height: 260px;">
+                </a>
+            </div>
+        </div>
+
+<!-- Pestaña plegable -->
+<div class="toggle-tab" onclick="toggleSidebar()">D</div>
+<div class="toggle-content">
+    <!-- Reemplazando el h2 con un nuevo div violeta -->
+    <div class="inicio-section">
+        <CENTER>
+    
+        <div class="enlace">
+            <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\INDEX.html">
+                <H2>INICIO</H2>
+            </a>
+        </div>
+    </CENTER>
+        <BR>
+            <BR>
+                <BR>
+                    <BR>
+    </div>
+    <!-- Divs para los enlaces -->
+    <div class="enlace">
+        <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\MARVEL.html">
+            <H5>MARVEL</H5>
+        </a>
+    </div>
+    <div class="enlace">
+        <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\DC.html">
+            <H5>DC</H5>
+        </a>
+    </div>
+    <div class="enlace">
+        <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\MULTIVERSO.html">
+            <H5>MULTIVERSO</H5>
+        </a>
+    </div>
+    <div class="enlace">
+        <a href="c:\Users\PC'SGAMING\OneDrive\Escritorio\PROYECTOAWEB\LINEA TEMPORAL.html">
+            <H5>LINEA TEMPORAL</H5>
+        </a>
+    </div>
+    
+
+<script>
+    function toggleSidebar() {
+        var toggleTab = document.querySelector('.toggle-tab');
+        toggleTab.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
